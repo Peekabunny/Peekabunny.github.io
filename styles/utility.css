@@ -1,0 +1,26 @@
+.btn{    
+  display: inline-flex;
+  appearance: none;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  position: relative;
+  white-space: nowrap;
+  vertical-align: middle;
+  outline: transparent solid 2px;
+  outline-offset: 2px;
+  line-height: 1.2;
+  border-radius: 0.375rem;   /* md radius ~ 6px */
+  font-weight: 600;          /* semibold */
+  transition-property: all;  /* common */
+  transition-duration: 200ms;
+  height: 2.5rem;            /* chakra size 10 = 40px */
+  min-width: 2.5rem;
+  font-size: 1rem;           /* md font size ~ 16px */
+  padding-inline-start: 1rem;  /* space-4 = 16px */
+  padding-inline-end: 1rem;
+  background: #81E6D9;       /* teal-200 */
+  color: #1A202C;            /* gray-800 */
+  cursor: pointer;           /* makes it look clickable */
+  border: none;              /* remove browser default */
+}
