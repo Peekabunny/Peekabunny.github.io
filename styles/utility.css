@@ -1,4 +1,35 @@
-.btn{    
+/* xs 
+@media (min-width: 475px) {
+  
+}
+*/
+/* sm 
+@media (min-width: 640px) {
+  
+} 
+*/
+/* md
+@media (min-width: 768px) {
+  
+}
+*/
+/* lg
+@media (min-width: 1024px) {
+  
+}
+*/
+/* xlg 
+@media (min-width: 1280px) {
+  
+}
+*/
+/* 2xlg
+@media (min-width: 1536px) {
+  
+} 
+*/
+
+.btn {
   display: inline-flex;
   appearance: none;
   align-items: center;
@@ -10,17 +41,95 @@
   outline: transparent solid 2px;
   outline-offset: 2px;
   line-height: 1.2;
-  border-radius: 0.375rem;   /* md radius ~ 6px */
-  font-weight: 600;          /* semibold */
-  transition-property: all;  /* common */
+  border-radius: 0.375rem; /* md radius ~ 6px */
+  font-weight: 600; /* semibold */
+  transition-property: all; /* common */
   transition-duration: 200ms;
-  height: 2.5rem;            /* chakra size 10 = 40px */
+  height: 2.5rem; /* chakra size 10 = 40px */
   min-width: 2.5rem;
-  font-size: 1rem;           /* md font size ~ 16px */
-  padding-inline-start: 1rem;  /* space-4 = 16px */
+  font-size: 1rem; /* md font size ~ 16px */
+  padding-inline-start: 1rem; /* space-4 = 16px */
   padding-inline-end: 1rem;
-  background: #81E6D9;       /* teal-200 */
-  color: #1A202C;            /* gray-800 */
-  cursor: pointer;           /* makes it look clickable */
-  border: none;              /* remove browser default */
+  background: #81e6d9; /* teal-200 */
+  color: #1a202c; /* gray-800 */
+  cursor: pointer; /* makes it look clickable */
+  border: none; /* remove browser default */
+}
+
+.container {
+  width: 100%;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  /* border: 1px solid red; */
+  
+}
+
+.section {
+  margin-top: 5rem;
+}
+
+
+/* Make the footer stick to the bottom */
+html, body {
+  height: 100%; /* full height */
+  margin: 0;    /* remove default margin */
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* pushes footer down */
+}
+
+.footer {
+  text-align: center;
+  padding: 1rem;
+
+}
+/* xs */
+@media (min-width: 475px) {
+  .container {
+    max-width: 475px;
+  }
+}
+/* sm */
+@media (min-width: 640px) {
+  .container {
+    max-width: 640px;
+  }
+}
+/* md */
+@media (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+/* lg */
+@media (min-width: 1024px) {
+  .container {
+    max-width: 1024px;
+  }
+
+  .section {
+    margin-top: 12rem;
+  }
+}
+/* xlg */
+@media (min-width: 1280px) {
+  .container {
+    max-width: 1280px;
+  }
+  .section {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
+}
+/* 2xlg */
+@media (min-width: 1536px) {
+  .container {
+    max-width: 1536px;
+  }
 }

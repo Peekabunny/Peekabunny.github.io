@@ -39,10 +39,22 @@ html {
     scroll-behavior: smooth;
 }
 
+  .light-mode {
+    --clr-dark: #f1f5f9;   /* body background in light mode */
+  --clr-light: #202023;  /* body text in light mode */
+  --clr-slate400: #2D3748;
+  --clr-slate600: #2D3748;
+  --clr-slate800: #2D3748;
+  --clr-darkblue: #FFFFFF;
+  }
+
 body{
     font-family: 'General Sans', sans-serif;
     background-color: var(--clr-dark);
-    color: var(--clr-slate600);
+    color: var(--clr-light);
+    transition: background-color 0.3s ease, color 0.3s ease;
+
+    
 }
 
 img,

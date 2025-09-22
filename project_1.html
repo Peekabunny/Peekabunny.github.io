@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project: Bulk File Renamer | Vincent Do</title>
+
+    <link rel="stylesheet" href="./styles/modern-normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="stylesheet" href="./styles/components/Projects_style/project-page.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="project-header container">
+        <a href="index.html" class="back-link btn">&larr; Back to Resume</a>
+    </header>
+
+    <main>
+        <article class="project-detail container">
+            
+            <h1 class="project-title">Bulk File Renaming Utility</h1>
+            <p class="project-subtitle">A Python script to find and replace text in multiple filenames within a directory.</p>
+
+            <figure class="project-image-container">
+             
+                <img 
+                    src="/images/rename.png" 
+                    alt="A magnifying glass highlighting text, representing a find-and-replace operation." 
+                    class="project-image"
+                />
+                <figcaption>The script finds and replaces text patterns in filenames for consistent naming.</figcaption>
+            </figure>
+
+            <section class="project-description">
+                <h2>About This Project</h2>
+                <p>
+                    This utility was created to solve the common issue of inconsistent or undesirable filenames, such as cleaning up photo filenames from "IMG_1234.JPG" to "Vacation_2024_01.JPG". The script provides a simple command-line interface to batch rename files safely and efficiently.
+                </p>
+                <p>
+                    Built with Python's standard <strong>os</strong> library, the program prompts the user for a target directory, a text pattern to find, and the replacement text. It then iterates through all files in the directory, and for each filename that contains the search pattern, it performs the replacement. The script is a practical demonstration of string manipulation and file system operations.
+                </p>
+            </section>
+
+            <section class="project-skills">
+                <h2>Technologies & Skills Learned</h2>
+                <ul class="skills-list">
+                    <li class="skill-item">Python</li>
+                    <li class="skill-item">File System Operations (os module)</li>
+                    <li class="skill-item">String Manipulation</li>
+                    <li class="skill-item">User Input Handling</li>
+                    <li class="skill-item">Automation Scripting</li>
+                    <li class="skill-item">Looping & Conditionals</li>
+                    <li class="skill-item">Error Handling</li>
+                </ul>
+            </section>
+        
+        </article>
+    </main>
+
+    <footer class="footer container">
+        <h3 class="footer__title">~ Vincent Do ~</h3>
+    </footer>
+
+</body>
+</html>

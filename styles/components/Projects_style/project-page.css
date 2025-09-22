@@ -1,0 +1,136 @@
+/* ========================================= */
+/*          PROJECT PAGE STYLES              */
+/* ========================================= */
+
+/* --- Header & Navigation --- */
+.project-header {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.back-link {
+    font-weight: 600;
+    text-decoration: none;
+    /* Uses the .btn styles from your existing CSS for consistency */
+}
+
+/* --- Main Project Content Container --- */
+.project-detail {
+    max-width: 800px; /* Limits width for better readability on large screens */
+    margin: 0 auto;   /* Centers the container */
+    padding-bottom: 4rem;
+}
+
+.project-title {
+    font-size: var(--size-4xl);
+    font-weight: 700;
+    color: var(--clr-slate800); /* Or your primary heading color */
+    margin-bottom: 0.5rem;
+}
+
+.project-subtitle {
+    font-size: var(--size-lg);
+    color: var(--clr-slate600); /* Or your secondary text color */
+    margin-bottom: 2rem;
+}
+
+/* --- Project Image --- */
+.project-image-container {
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border: 1px solid var(--clr-slate300); /* Subtle border */
+}
+
+.project-image-container figcaption {
+    margin-top: 1rem;
+    font-size: var(--size-sm);
+    color: var(--clr-slate500);
+    font-style: italic;
+}
+
+/* --- Content Sections --- */
+.project-description,
+.project-skills {
+    margin-bottom: 3rem;
+}
+
+.project-detail h2 {
+    font-size: var(--size-2xl);
+    font-weight: 600;
+    color: var(--clr-slate800);
+    margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--clr-rose); /* Or your accent color */
+}
+
+.project-description p {
+    font-size: var(--size-base);
+    line-height: 1.8;
+    color: var(--clr-slate700);
+    margin-bottom: 1rem;
+}
+
+/* --- Skills List --- */
+.skills-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem; /* Space between skill tags */
+}
+
+.skill-item {
+    background-color: var(--clr-slate200); /* A light background for the tag */
+    color: var(--clr-slate800);
+    padding: 0.5rem 1rem;
+    border-radius: 999px; /* Pill shape */
+    font-size: var(--size-sm);
+    font-weight: 500;
+}
+
+/* --- Dark Mode Adjustments (if you have them in style.css) --- */
+/* Add styles here if needed, for example: */
+.dark .project-title,
+.dark .project-detail h2 {
+    color: var(--clr-light);
+}
+
+.dark .project-subtitle,
+.dark .project-description p {
+    color: var(--clr-slate400);
+}
+
+.dark .skill-item {
+    background-color: var(--clr-slate800);
+    color: var(--clr-slate300);
+}
+
+.dark .project-image {
+    border-color: var(--clr-slate700);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .project-title {
+        font-size: var(--size-3xl);
+    }
+    .project-detail h2 {
+        font-size: var(--size-xl);
+    }
+}
+
+.footer__title {
+    font-size: var(--size-xs);
+    font-weight: 400;
+    color: var(--clr-slate600);
+    text-align: center;
+    text-transform: uppercase;
+    user-select: none;
+}

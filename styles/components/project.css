@@ -1,0 +1,142 @@
+/* === Project Section Styling (converted from hotel cards) === */
+
+/* Project container grid */
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;       /* center grid & title */
+  padding: 2rem 1rem;
+}
+
+.project__cards {
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;   /* center grid tracks */
+  max-width: 1024px;
+  width: 100%;
+}
+
+@media (min-width: 700px) {
+  .project__cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .project__cards > section {
+    height: 350px;
+  }
+}
+
+@media (min-width: 950px) {
+  .project__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* Project title effect */
+.project .title {
+  font: 900 80px "Rubik", sans-serif;
+  text-transform: uppercase;
+  background: url("/images/bg-img.jpg");
+  background-size: cover;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: var(--clr-light);
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* Background images for each project card */
+.project__1 {
+  background-image: url("/images/placeholder-1024x1024.png");
+}
+.project__2 {
+  background-image: url("/images/chris-ried-ieic5Tq8YMk-unsplash.jpg");
+}
+.project__3 {
+  background-image: url("/images/james-harrison-vpOeXr5wmR4-unsplash.jpg");
+}
+.project__4 {
+  background-image: url("/images/placeholder-1024x1024.png");
+}
+
+/* Base card styles */
+.project__cards > section {
+  background-size: cover;
+  background-position: center;
+  background-color: #3a8491;
+  border-radius: 8px;
+}
+
+/* Card inner content */
+.project__cards > section > div {
+  background-color: rgba(0, 0, 0, 0.75);
+  margin: 1rem;
+  padding: 1rem;
+  color: whitesmoke;
+  text-align: center;
+  font: 14px "Rubik", sans-serif;
+  height: calc(100% - 4rem);
+  display: grid;
+  grid-template-rows: min-content auto min-content;
+  align-items: center;
+  border-radius: 6px;
+}
+
+.project__cards h2 {
+  font-size: 1.3rem;
+  font-weight: bold;
+  line-height: 1.2;
+  margin-bottom: 0;
+}
+
+.project__cards p {
+  font: italic 1.125rem "Cardo", cursive;
+  line-height: 1.35;
+}
+
+/* Links (Learn more buttons) */
+.project__cards a {
+  background-color: #ffa600;
+  color: rgba(0, 0, 0, 0.75);
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  border-radius: 4px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.project__cards a:hover {
+  background-color: #e69500;
+}
+
+.project__cards a:focus {
+  outline: 1px dashed #e69500;
+  outline-offset: 3px;
+}
+
+/* Hover reveal animation */
+@media (hover: hover) and (min-width: 700px) and (prefers-reduced-motion: no-preference) {
+  .project__cards > section > div {
+    transform: translateY(calc(350px - 8rem));
+    height: 5rem;
+    overflow: hidden;
+    transition: all 700ms ease-in-out;
+  }
+
+  .project__cards > section > div > *:not(h2) {
+    opacity: 0;
+    transform: translateY(1rem);
+    transition: all 700ms ease-in-out;
+  }
+
+  .project__cards > section:hover div,
+  .project__cards > section:focus-within div {
+    transform: translateY(0);
+    height: calc(350px - 4rem);
+  }
+
+  .project__cards > section:hover div > *:not(h2),
+  .project__cards > section:focus-within div > *:not(h2) {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project: Dynamic Greeting Utility | Vincent Do</title>
+
+    <link rel="stylesheet" href="./styles/modern-normalize.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="./styles/utility.css" />
+    <link rel="stylesheet" href="./styles/components/Projects_style/project-page.css" />
+    <link href="https://api.fontshare.com/v2/css?f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+    <header class="project-header container">
+        <a href="index.html" class="back-link btn">&larr; Back to Resume</a>
+    </header>
+
+    <main>
+        <article class="project-detail container">
+            
+            <h1 class="project-title">Dynamic Greeting Utility</h1>
+            <p class="project-subtitle">A C utility that provides a time-appropriate greeting by fetching the system time.</p>
+
+            <figure class="project-image-container">
+                <!-- TODO: Replace this src with the path to your downloaded image -->
+                <img 
+                    src="/images/greeting.png" 
+                    alt="A conceptual image showing C code interacting with a system clock." 
+                    class="project-image"
+                />
+                <figcaption>The application interfaces with the system's clock to provide context-aware output.</figcaption>
+            </figure>
+
+            <section class="project-description">
+                <h2>About This Project</h2>
+                <p>
+                    This command-line utility was developed to practice interfacing a C program with the underlying operating system. The program’s main function is to provide a dynamic greeting that changes based on the current time of day.
+                </p>
+                <p>
+                    The core technical challenge involved using the C standard library's <code>&lt;time.h&gt;</code> module to fetch and handle system time. The application retrieves the current time, parses the <code>struct tm</code> data structure to isolate the hour, and then applies conditional logic to display "Good morning," "Good afternoon," or "Good evening." It’s a foundational exercise in creating context-aware applications and working with system-level APIs in C.
+                </p>
+            </section>
+
+            <section class="project-skills">
+                <h2>Technologies & Skills Learned</h2>
+                <ul class="skills-list">
+                    <li class="skill-item">C Programming</li>
+                    <li class="skill-item">Standard Library Usage (&lt;time.h&gt;)</li>
+                    <li class="skill-item">System Time Interfacing</li>
+                    <li class="skill-item">Conditional Logic</li>
+                    <li class="skill-item">Data Structure Parsing (struct tm)</li>
+                    <li class="skill-item">Command-Line Applications</li>
+                    <li class="skill-item">Procedural Programming</li>
+                </ul>
+            </section>
+        
+        </article>
+    </main>
+
+    <footer class="footer container">
+        <h3 class="footer__title">~ Vincent Do ~</h3>
+    </footer>
+
+</body>
+</html>
